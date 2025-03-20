@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="CSS/view all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Discover/viewall</title>
+</head>
+
+<body>  
+  <input type="checkbox" id="personalise-toggle">
+  <div class="personalise-sidebar">
+      <div class="personalise-header">
+          <h2>Personalise Topics</h2>
+          <label for="personalise-toggle" class="close-personalise">×</label>
+      </div>
+      
+      <div class="topic-group">
+          <h3>Browse by Cancer Types</h3>
+          <div class="topic-option">
+              <input type="checkbox" id="lung-cancer">
+              <label for="lung-cancer">Lung Cancer</label>
+          </div>
+          <div class="topic-option">
+              <input type="checkbox" id="breast-cancer">
+              <label for="breast-cancer">Breast Cancer</label>
+          </div>
+          <div class="topic-option">
+              <input type="checkbox" id="colorectal-cancer">
+              <label for="colorectal-cancer">Colorectal Cancer</label>
+          </div>
+      </div>
+
+      <div class="topic-group">
+          <h3>Browse by Treatment Types</h3>
+          <div class="topic-option">
+              <input type="checkbox" id="immunotherapy">
+              <label for="immunotherapy">Immunotherapy</label>
+          </div>
+          <div class="topic-option">
+              <input type="checkbox" id="targeted-therapy">
+              <label for="targeted-therapy">Targeted Therapy</label>
+          </div>
+          <div class="topic-option">
+              <input type="checkbox" id="chemotherapy">
+              <label for="chemotherapy">Chemotherapy</label>
+          </div>
+      </div>
+
+      <button class="apply-topics">Apply Changes</button>
+  </div>
+  <div class="overlay"></div>
+  
+  <header class="header">
+      <div class="left-section">
+          <div class="date-container">
+            <div class="date">Monday 16, Dec 2024</div>
+        </div>
+      </div>
+      <div class="center-section">
+          <img class="logo" src="onboarding-icons/logo.svg">  
+      </div>
+
+      <div class="right-section">
+        <div class="noti-container">
+          <img class="noti-icon" src="onboarding-icons/noti.svg">
+          <div class="Tool-tip">Notification</div>
+        </div>
+        <div class="noti-container">
+          <img class="profile-icon" src="onboarding-icons/profile.svg">
+          <div class="Tool-tip">Profile</div>
+        </div>
+      </div>
+  </header>
+
+  <nav class="sidebar">
+      <div class="sidebar-item">
+          <img src="sidebar-icons/discover.svg" alt="Discover">
+          <div class="Tool-tip">Discover</div>
+          
+      </div>
+      <div class="sidebar-item">
+          <img src="sidebar-icons/calender.svg" alt="Calendar">
+          <div class="Tool-tip">Calendar</div>
+          
+      </div>
+      <div class="sidebar-item">
+          <img src="sidebar-icons/Library.svg" alt="Library">
+          <div class="Tool-tip">Library</div>
+          
+      </div>
+  </nav>
+        
+
+    <main>
+        <section>
+          <label for="personalise-toggle" class="Personalise-card">   <!--Filter card-->
+            <div class="filter-content">
+                <p id="Personalise-title">Personalise topics</p>
+                <img id="filter-icon" src="card-icons/filter.svg">
+            </div>
+         </label>
+            
+            <div class="search-grid">
+                <div class="card">
+                  <div class="search-card">
+                    <img id="pdf-icon" src="card-icons/article.svg">
+                    <div class="badge">20 Files</div>
+                  </div>
+                  <div class="title">Presentations / pdf's</div>
+                  <div class="description">Access all the highlighted presentation and pdf's on cancer oncology topics</div>
+                  <a href="#" class="read-link">View</a>
+                </div>
+                
+                <div class="card">
+                  <div class="search-card">
+                    <img id="pdf-icon" src="card-icons/video.svg">
+                    <div class="badge">20 Videos</div>
+                  </div>
+                  <div class="title">Conferences videos</div>
+                  <div class="description">Access all the highlighted videos on cancer oncology topics</div>
+                  <a href="#" class="read-link">View</a>
+                </div>
+                
+                <div class="card">
+                  <div class="search-card">
+                    <img id="pdf-icon" src="card-icons/book.svg">
+                    <div class="badge">20 Videos</div>
+                  </div>
+                  <div class="title">Clinical trials</div>
+                  <div class="description">Access all the highlighted clinical trial and abstracts on cancer oncology topics</div>
+                  <a href="#" class="read-link">View</a>
+                </div>
+        </section>
+
+        <section class="search-pdf-ppt">
+            <div class="articles-grid">
+              <div class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <span class="article-tag">PDF</span>
+                  <h3 class="article-title">Recent update in Lung -cancer update</h3>
+                  <p class="article-text">Lorem ipsum dolor sit amet consectetur...</p>
+                  <div class="article-meta">
+                    <span>Dec 15, 2024</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <span class="article-tag">PDF</span>
+                  <h3 class="article-title">Breast Cancer Research Updates</h3>
+                  <p class="article-text">Latest findings in breast cancer treatment...</p>
+                  <div class="article-meta">
+                    <span>Dec 14, 2024</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="article-card">
+                <div class="article-image"></div>
+                <div class="article-content">
+                  <span class="article-tag">PDF</span>
+                  <h3 class="article-title">Oncology Treatment Guidelines</h3>
+                  <p class="article-text">Updated protocols for cancer treatment...</p>
+                  <div class="article-meta">
+                    <span>Dec 13, 2024</span>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span>...</span>
+            <button class="page-btn">8</button>
+        </div>
+
+    </main>
+</body>
+</html>

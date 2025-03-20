@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair', serif;
+}
+
+html, body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 252, 252);
+    padding: 1rem;
+}
+
+
+/* Left Section */
+.left-section {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 13rem; 
+    align-content: end;
+}
+
+h1 {
+    margin-left: 20px;
+    padding-right: 40px;
+    line-height: 2.8rem;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Right Section - login-card container */
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.login-card {
+    max-width: 500px;
+    max-height: 450px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+h2 {
+    color: #014739;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: left;
+    font-size: 24px;
+}
+   
+/* input labels container */
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Remember Me */
+
+.remember-me label {
+    margin-left: 1rem;
+    color: #B3B3BB;
+}
+
+/* Buttons Container */
+.btn-container {
+    margin-top: 3rem;
+}
+.btn {
+    flex: 0;
+    height: 40px;
+    width: 105px;
+    padding: 0.75rem;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-login {
+    background-color: #014739;
+    color: white;
+    margin-right: 5rem;
+}
+
+.btn-register {
+    background-color: white;
+    color: #014739;
+    border: 1px solid #014739;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.forget-link {
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.forget-link a {
+    text-decoration: none;
+    color: #2974c5;
+  }
+
+  /* Forget password */
+  .password-change .btn-create {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: #014739;
+    color: white;
+    margin-left:3.5rem;
+  }
+  
+  

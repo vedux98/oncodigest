@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onco Digest - Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary: hsl(162, 47%, 50%);
+            --background: hsl(0, 0%, 100%);
+            --foreground: hsl(222.2, 84%, 4.9%);
+            --muted: hsl(210, 40%, 96.1%);
+            --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--foreground);
+            background: var(--background);
+        }
+
+        .header {
+            padding: 1.5rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(109.6deg, rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--foreground);
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        input[type="email"] {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--muted);
+            border-radius: 0.75rem;
+            font-size: 1rem;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1280px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .feature {
+            padding: 2rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--foreground);
+        }
+
+        .coming-soon {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--muted);
+        }
+
+        .countdown h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--foreground);
+            color: white;
+        }
+
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="onboarding-icons/logo.svg" alt="Onco Digest Logo" class="logo">
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content animate-fade-in">
+                <h1>The Future of Oncology Knowledge Sharing</h1>
+                <p>Join our community of oncology professionals for exclusive access to conference materials, research papers, and expert insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Join Waitlist</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature animate-fade-in">
+                <i data-lucide="calendar" class="feature-icon"></i>
+                <h3>Event Calendar</h3>
+                <p>Stay updated with upcoming oncology conferences and events worldwide.</p>
+            </div>
+            <div class="feature animate-fade-in">
+                <i data-lucide="book-open" class="feature-icon"></i>
+                <h3>Digital Library</h3>
+                <p>Access a comprehensive collection of conference videos, research papers, and abstracts.</p>
+            </div>
+            <div class="feature animate-fade-in">
+                <i data-lucide="file-text" class="feature-icon"></i>
+                <h3>Personalized Experience</h3>
+                <p>Customize your feed based on your specialization and interests.</p>
+            </div>
+        </section>
+
+        <section class="coming-soon">
+            <div class="countdown">
+                <h2>Launching Soon</h2>
+                <p>Be the first to know when we launch</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Onco Digest. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

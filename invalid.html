@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validating...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(252, 252, 252);
+            font-family: 'Playfair', serif;
+        }
+
+        .message-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            text-align: center;
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .redirecting {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-card">
+        <div class="error-message">Invalid credentials!</div>
+        <div class="redirecting">Redirecting to register page...</div>
+    </div>
+    <meta http-equiv="refresh" content="2;url=register.html">
+</body>
+</html>

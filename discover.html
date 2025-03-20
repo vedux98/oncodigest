@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="CSS/Discover.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Discover</title>
+</head>
+
+<body>
+    <input type="checkbox" id="personalise-toggle">
+    <div class="personalise-sidebar">
+        <div class="personalise-header">
+            <h2>Personalise Topics</h2>
+            <label for="personalise-toggle" class="close-personalise">×</label>
+        </div>
+        
+        <div class="topic-group">
+            <h3>Browse by Cancer Types</h3>
+            <div class="topic-option">
+                <input type="checkbox" id="lung-cancer">
+                <label for="lung-cancer">Lung Cancer</label>
+            </div>
+            <div class="topic-option">
+                <input type="checkbox" id="breast-cancer">
+                <label for="breast-cancer">Breast Cancer</label>
+            </div>
+            <div class="topic-option">
+                <input type="checkbox" id="colorectal-cancer">
+                <label for="colorectal-cancer">Colorectal Cancer</label>
+            </div>
+        </div>
+
+        <div class="topic-group">
+            <h3>Browse by Treatment Types</h3>
+            <div class="topic-option">
+                <input type="checkbox" id="immunotherapy">
+                <label for="immunotherapy">Immunotherapy</label>
+            </div>
+            <div class="topic-option">
+                <input type="checkbox" id="targeted-therapy">
+                <label for="targeted-therapy">Targeted Therapy</label>
+            </div>
+            <div class="topic-option">
+                <input type="checkbox" id="chemotherapy">
+                <label for="chemotherapy">Chemotherapy</label>
+            </div>
+        </div>
+
+        <button class="apply-topics">Apply Changes</button>
+    </div>
+    <div class="overlay"></div>
+    
+    <header class="header">
+        <div class="left-section">
+            <div class="date-container">
+              <div class="date">Monday 16, Dec 2024</div>
+          </div>
+        </div>
+        <div class="center-section">
+            <img class="logo" src="onboarding-icons/logo.svg">  
+        </div>
+
+        <div class="right-section">
+          <div class="noti-container">
+            <img class="noti-icon" src="onboarding-icons/noti.svg">
+            <div class="Tool-tip">Notification</div>
+          </div>
+          <div class="noti-container">
+            <img class="profile-icon" src="onboarding-icons/profile.svg">
+            <div class="Tool-tip">Profile</div>
+          </div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-item">
+            <img src="sidebar-icons/discover.svg" alt="Discover">
+            <div class="Tool-tip">Discover</div>
+            
+        </div>
+        <div class="sidebar-item">
+            <img src="sidebar-icons/calender.svg" alt="Calendar">
+            <div class="Tool-tip">Calendar</div>
+            
+        </div>
+        <div class="sidebar-item">
+            <img src="sidebar-icons/Library.svg" alt="Library">
+            <div class="Tool-tip">Library</div>
+            
+        </div>
+    </nav>
+
+    <main>
+        <section class="stats grid">    <!-- First stat card -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <img  id="stat-icon" src="card-icons/video.svg">
+                        <p>You have watched 48 <br>conference videos </br></p>
+                    </div>
+                </div>
+                <div class="stat-card">         <!-- second stat card -->
+                    <div class="stat-content">
+                        <img  id="stat-icon" src="card-icons/article.svg">
+                        <p>12 more resources are <br>added this week</br></p>
+                    </div>
+                </div>
+                <div class="stat-card">         <!-- third stat card -->
+                    <div class="stat-content">
+                        <img  id="stat-icon" src="card-icons/ticket.svg">
+                        <p>There are 3 upcoming <br>conference near you<br></p>
+                    </div>
+                </div>
+                <label for="personalise-toggle" class="Personalise-card">   <!--Filter card-->
+                    <div class="filter-content">
+                        <p id="Personalise-title">Personalise topics</p>
+                        <img id="filter-icon" src="card-icons/filter.svg">
+                    </div>
+                </label>
+            </div>
+
+            <h2 class="section-title">Featured Articles and Insights</h2>
+            <p class="section-subtitle">Stay updated with latest breakthrough in oncology</p>
+
+            <div class="video-highlight">         <!-- First arti card -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-icon"><img src="card-icons/play.svg"></div>
+                    </div>
+                    <div class="video-content">
+                        <span class="video-tag">Conference Highlights</span>
+                        <h3 class="article-title">Recent update in Lung -cancer update</h3>
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur...</p>
+                        <div class="article-meta">
+                            <span>Dec 15, 2024</span>
+                            <a href="#" class="read-more">Watch now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">                <!-- second arti card -->
+                    <div class="video-thumbnail">
+                        <div class="play-icon"><img src="card-icons/play.svg"></div>
+                    </div>
+                    <div class="video-content">
+                        <span class="video-tag">Conference Highlights</span>
+                        <h3 class="article-title">Recent update in Lung -cancer update</h3>
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur...</p>
+                        <div class="article-meta">
+                            <span>Dec 15, 2024</span>
+                            <a href="#" class="read-more">Watch now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">         <!-- Third arti card -->
+                    <div class="video-thumbnail">
+                        <div class="play-icon"><img src="card-icons/play.svg"></div>
+                    </div>
+                    <div class="video-content">
+                        <span class="video-tag">Conference Highlights</span>
+                        <h3 class="article-title">Recent update in Lung -cancer update</h3>
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur...</p>
+                        <div class="article-meta">
+                            <span>Dec 15, 2024</span>
+                            <a href="#" class="read-more">Watch now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles-grid">                <!-- Fourth arti card -->
+                <div class="article-card">
+                    <div class="article-image"></div>
+                    <div class="article-content">
+                        <span class="article-tag">PDF</span>
+                        <h3 class="article-title">Recent update in Lung -cancer update</h3>
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur...</p>
+                        <div class="article-meta">
+                            <span>Dec 15, 2024</span>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-card">        <!-- fifthn arti card -->
+                    <div class="article-image"></div>
+                    <div class="article-content">
+                        <span class="article-tag">PPT</span>
+                        <h3 class="article-title">Recent update in Lung -cancer update</h3>
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur...</p>
+                        <div class="article-meta">
+                            <span>Dec 15, 2024</span>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-card">        <!-- sixth arti card -->
+                    <div class="article-image"></div>
+                    <div class="article-content">
+                        <span class="article-tag">PDF</span>
+                        <h3 class="article-title">Recent update in Lung -cancer update</h3>
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur...</p>
+                        <div class="article-meta">
+                            <span>Dec 15, 2024</span>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <button>View all articles</button>
+            </div>
+
+            <h2 class="section-title">Latest Research Abstracts</h2>
+            <p class="section-subtitle">Explore peer-reviewed research and clinical study abstracts</p>
+            
+          
+            <div class="research-grid">
+              <!-- First Research card -->
+              <div class="research-card">
+                  <div class="research-header">
+                      <span class="research-tag">Clinical Trial</span>
+                      <span class="research-date">Dec, 2024</span>
+                      <button class="bookmark-btn">
+                          <img src="card-icons/bookmark.svg" alt="bookmark">
+                      </button>
+                  </div>
+                  <h3 class="research-title">Long term outcomes of targeted therapy in metastatic cancer</h3>
+                  <p class="research-text">Lorem ipsum dolor sit amet consectetur. Felis nisi donec tempus purus lorem id. Viverra dolor pharetra adipiscing eget. Sagittis nam ipsum cursus nisi adipiscing adipiscing nec non diam.</p>
+                  <div class="research-meta">
+                      <div class="views">
+                          <img src="card-icons/views.svg" alt="views">
+                          <span>50 views</span>
+                      </div>
+                      <a href="#" class="read-more">Read abstract</a>
+                  </div>
+              </div>
+          
+              <!-- Second Research card -->
+              <div class="research-card">
+                  <div class="research-header">
+                      <span class="research-tag">Clinical Trial</span>
+                      <span class="research-date">Dec, 2024</span>
+                      <button class="bookmark-btn">
+                          <img src="card-icons/bookmark.svg" alt="bookmark">
+                      </button>
+                  </div>
+                  <h3 class="research-title">Long term outcomes of targeted therapy in metastatic cancer</h3>
+                  <p class="research-text">Lorem ipsum dolor sit amet consectetur. Felis nisi donec tempus purus lorem id. Viverra dolor pharetra adipiscing eget. Sagittis nam ipsum cursus nisi adipiscing adipiscing nec non diam.</p>
+                  <div class="research-meta">
+                      <div class="views">
+                          <img src="card-icons/views.svg" alt="views">
+                          <span>50 views</span>
+                      </div>
+                      <a href="#" class="read-more">Read abstract</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="research-grid">
+            <!-- Third Research card -->
+            <div class="research-card">
+                <div class="research-header">
+                    <span class="research-tag">Clinical Trial</span>
+                    <span class="research-date">Dec, 2024</span>
+                    <button class="bookmark-btn">
+                        <img src="card-icons/bookmark.svg" alt="bookmark">
+                    </button>
+                </div>
+                <h3 class="research-title">Long term outcomes of targeted therapy in metastatic cancer</h3>
+                <p class="research-text">Lorem ipsum dolor sit amet consectetur. Felis nisi donec tempus purus lorem id. Viverra dolor pharetra adipiscing eget. Sagittis nam ipsum cursus nisi adipiscing adipiscing nec non diam.</p>
+                <div class="research-meta">
+                    <div class="views">
+                        <img src="card-icons/views.svg" alt="views">
+                        <span>50 views</span>
+                    </div>
+                    <a href="#" class="read-more">Read abstract</a>
+                </div>
+            </div>
+        
+            <!-- Fourth Research card -->
+            <div class="research-card">
+                <div class="research-header">
+                    <span class="research-tag">Clinical Trial</span>
+                    <span class="research-date">Dec, 2024</span>
+                    <button class="bookmark-btn">
+                        <img src="card-icons/bookmark.svg" alt="bookmark">
+                    </button>
+                </div>
+                <h3 class="research-title">Long term outcomes of targeted therapy in metastatic cancer</h3>
+                <p class="research-text">Lorem ipsum dolor sit amet consectetur. Felis nisi donec tempus purus lorem id. Viverra dolor pharetra adipiscing eget. Sagittis nam ipsum cursus nisi adipiscing adipiscing nec non diam.</p>
+                <div class="research-meta">
+                    <div class="views">
+                        <img src="card-icons/views.svg" alt="views">
+                        <span>50 views</span>
+                    </div>
+                    <a href="#" class="read-more">Read abstract</a>
+                </div>
+            </div>
+        </div>
+
+         </section>
+     </main>
+     <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4 class="footer-heading">Onco Digest</h4>
+                <p style="color: #8E9196; line-height: 1.6; margin-bottom: 1.5rem;">
+                    Empowering oncology professionals with the latest research, insights, and conference materials.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Twitter/X">
+                        <i data-lucide="twitter" class="social-icon"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i data-lucide="linkedin" class="social-icon"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Discord">
+                        <i data-lucide="message-circle" class="social-icon"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Medium">
+                        <i data-lucide="book-open" class="social-icon"></i>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="footer-col">
+                <h4 class="footer-heading">Company</h4>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Advertise With Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="footer-heading">Legal</h4>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Cookie Policy</a>
+                    <a href="#" class="footer-link">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Onco Digest. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>

@@ -70,6 +70,17 @@ form {
 .form-group {
     margin-bottom: 1.5rem;
     text-align: left;
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px; /* Adjust based on your icon size */
+    height: auto;
 }
 
 
